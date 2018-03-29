@@ -63,6 +63,17 @@ public class CalculatorTest {
         assertThat(divide).isEqualTo(3);
     }
 
+    @Test
+    public void divide_should_divide_nine_by_two() {
+        //given
+
+        //when
+        int divide = calculator.divide(9, 2);
+
+        //then
+        assertThat(divide).isEqualTo(4);
+    }
+
     @Ignore
     @Test
     public void multiply_should_multiply_seven_by_two() {
