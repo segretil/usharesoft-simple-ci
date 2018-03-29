@@ -74,7 +74,6 @@ public class CalculatorTest {
         assertThat(divide).isEqualTo(4);
     }
 
-    @Ignore
     @Test
     public void multiply_should_multiply_seven_by_two() {
         //given
@@ -83,7 +82,17 @@ public class CalculatorTest {
         int multiply = calculator.multiply(7, 2);
 
         //then
-        //TODO fix this
         assertThat(multiply).isEqualTo(14);
+    }
+
+    @Test
+    public void multiply_should_multiply_huit_by_two() {
+        //given
+
+        //when
+        int multiply = calculator.multiply(8, 2);
+
+        //then
+        assertThat(multiply).isEqualTo(16);
     }
 }
